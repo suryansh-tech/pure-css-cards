@@ -3,22 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>css card</title>
     <link rel="stylesheet" href="style.css">
-
 </head>
 <body>
+    <div class="container">
+        <div class="card">
+            
+                <img src="sample.jpg" alt="">
 
-<div class="container">
-    <div class="card">
-        <img src="image2.jpeg" >
+            <!-- text box  -->
+            <div class="textbox">
+                <h3>Order Summery</h3>
+                <!-- para -->
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi illo libero nobis
+                </p>
+            </div>
 
-        <h2>Improve your front end skills by projects</h2>
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, corrupti?
-        </p>
+            <!-- amount box -->
+            <div class="amountbox">
+                <div class="leftbox">
+                    <div class="imgbox">
+                        <img src="logo.png" />
+                    </div>
+                    <div class="textamount">
+                        <p>Amount</p>
+                        <p>$99.9/year</p>
+                    </div>
+                </div>
+                <div class="rightbox">
+                    <a href="#">Change</a>
+                </div>
+            </div>
+
+            <!-- button -->
+            <button id="paybtn">
+                Procced to Payment
+            </button>
+        </div>
     </div>
-</div>
-
 </body>
 </html>

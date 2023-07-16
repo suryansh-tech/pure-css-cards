@@ -1,56 +1,131 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Mukta&family=Orbitron&family=Poppins:wght@500;600;700&family=Roboto&family=Work+Sans:wght@400;500&display=swap');
 
 *{
-    padding: 0;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Work Sans', sans-serif; */
+}
+
+/* =====================================================
+               CSS VARIABLES DEFINING
+======================================================== */
+
+:root{
+    --heading: rgb(0, 10, 45);
+    --para: #777;
+    --helper: #8490ff;
+    --gradient: linear-gradient(to right, rgb(132, 144, 255) 0%, rgb(98, 189, 252) 100%);
+    --bggr: #E6E6FA;
 }
 
 .container{
-    /* suryanh  */
     width: 100vw;
     height: 100vh;
+    background-color: var(--bggr);
     display: flex;
-    align-items: center;
     justify-content: center;
-    background: #12c2e9;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #f64f59, #c471ed, #12c2e9);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+    align-items: center;
 }
 
 .card{
-    width: 300px;
-    height: 450px;
+    width: 20%;
+    height: 75%;
+    border-radius: 10px;
     background-color: white;
-    border-radius: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 25px;
-    padding: 20px;
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+    gap: 10px;
+    transition: ease 0.3s;
+    
 }
 
-.card img{
-    height: 65%;
-    border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
-}
-
-.card h2{
-    font-size: 1.4rem;
-    word-spacing: 1px;
-    font-family: 'Poppins', sans-serif;
-    line-height: 30px;
+.card:hover{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
     transform: translateY(-10px);
-    color: rgb(36, 36, 36);
 }
 
-.card p{
-    font-size: 17px;
-    transform: translateY(-22px);
-    font-family: 'Poppins', sans-serif;
-    line-height: 20px;
-    color: rgb(138, 138, 138);
+img{
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
+
+.textbox{
+    width: 100%;
+    /* background-color: #8490ff; */
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    text-align: center;
+    padding: 0 11px;
+    padding-top: 4px;
+}
+
+h3{
+    color: var(--heading);
+    font-weight: bold;
+}
+
+.textbox p{
+    font-size: 14px;
+    color: var(--para);
+    line-height: 19px;
+}
+
+
+.amountbox{
+    width: 80%;
+    height: 11%;
+    background-color: var(--bggr);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    padding: 10px;
+
+}
+
+.imgbox{
+    width: 25%;
+    margin-top: 5px;
+}
+
+.leftbox{
+    display: flex;
+    gap: 5px;
+}
+
+.textamount{
+    margin-top: 6px;
+    line-height: 16px;
+}
+
+
+#paybtn{
+    width: 80%;
+    height: 9%;
+    border: none;
+    background-image: var(--gradient);
+    color: white;
+    border-radius: 5px;
+    transition: ease 0.3s;
+}
+
+#paybtn:hover{
+    cursor: pointer;
+    transform: scale(1.01);
+}
+
+
+
+
+
+
+
+
+
+
+
