@@ -6,7 +6,7 @@
 
 ## css card 3
 
-![sample](sample.png)
+![sample](card3.png)
 
 ### Pure CSS responsive cards only using html and css index & css
 
